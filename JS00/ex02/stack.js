@@ -1,6 +1,6 @@
 // 스택으로 사용할 배열을 리턴
 function stack_create() {
-  //
+  let stack = [];
 }
 
 // 스택이 비어있는지 확인
