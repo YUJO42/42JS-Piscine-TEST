@@ -52,3 +52,5 @@ function stack_pop(stack) {
     stack[len - 1] = undefined;
   }
 }
+
+(module.exports = stack_create), stack_empty, stack_peek, stack_pop, stack_push;
