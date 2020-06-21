@@ -35,15 +35,21 @@ function stack_peek(stack) {
 
 function stack_pop(stack) {
   let len = 0;
+
   while (stack[len] !== undefined) {
     len++;
   }
   if (len === 0) {
-    return;
+    return undefined;
   } else {
-    stack[len - 1] = undefined;
+    stack = stack.
   }
 }
+
+let stack = [1, 2, 3];
+console.log(stack);
+stack_pop(stack);
+console.log(stack);
 
 module.exports = {
   stack_empty: stack_empty,

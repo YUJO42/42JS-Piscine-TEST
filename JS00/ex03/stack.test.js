@@ -48,23 +48,22 @@ describe("peek", () => {
 });
 
 // pop test 방법 찾기
+
 describe("pop", () => {
+  let stack = [1, 2, 3, 4, 5];
+
   it("pop test1", () => {
-    let stack = [1, 2];
     stack_pop(stack);
-    expect(stack).toEqual([1]);
+    expect(stack.length).toEqual(5);
   });
   it("pop test2", () => {
-    let stack = [1];
     stack_pop(stack);
-    expect(stack).toEqual([0]);
+    expect(stack.length).toEqual(5);
   });
   it("pop test3", () => {
-    let stack = [1, 2, 3, 4, 5];
     stack_pop(stack);
     stack_pop(stack);
     stack_pop(stack);
-    stack_pop(stack);
-    expect(stack).toEqual([1]);
+    expect(stack).toEqual([0]);
   });
 });
