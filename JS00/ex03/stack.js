@@ -39,10 +39,15 @@ function stack_pop(stack) {
   while (stack[len] !== undefined) {
     len++;
   }
+  console.log(len);
   if (len === 0) {
     return undefined;
   } else {
-    stack = stack.
+    stack[len - 1] = undefined;
+  }
+  for (let i = 0; stack[i] === undefined; i++) {
+    stack = [];
+    stack[i] = stack[i];
   }
 }
 
